@@ -39,7 +39,9 @@ $routes->get('/helpers/html-helper', 'HelpersController::html');
 $routes->get('/helpers/html-helper/memes', 'HelpersController::htmlMemes');
 $routes->get('/helpers/inflector-helper', 'HelpersController::inflector');
 $routes->get('/helpers/number-helper', 'HelpersController::number');
+$routes->get('/helpers/security-helper', 'HelpersController::security');
 $routes->get('/helpers/url-helper', 'HelpersController::url');
+$routes->get('/helpers/xml-helper', 'HelpersController::xml');
 
 /*
  * --------------------------------------------------------------------

@@ -73,6 +73,16 @@ class HelpersController extends BaseController
 		return view('/helpers/v_numberHelper', $data);
 	}
 
+	public function security()
+	{
+		$data = [
+			'title' 		=> 'Security Helper',
+			'activeNav' => 'security-helper'
+		];
+
+		return view('/helpers/v_securityHelper', $data);
+	}
+
 	public function url()
 	{
 		$data = [
@@ -81,5 +91,15 @@ class HelpersController extends BaseController
 		];
 
 		return view('/helpers/v_urlHelper', $data);
+	}
+
+	public function xml()
+	{
+		$data = [
+			'title' 		=> 'XML Helper',
+			'activeNav' => 'xml-helper'
+		];
+
+		return view('/helpers/v_xmlHelper', $data);
 	}
 }
