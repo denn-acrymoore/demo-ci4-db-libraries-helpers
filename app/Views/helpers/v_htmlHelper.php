@@ -134,25 +134,8 @@
     <div class="col">
       <h3>video($src, $unsupportedMessage='', $attributes='', $tracks=[], $threatAsRoutedURIString=false)</h3>
 
-      <?php
-      $list = [
-        'color' => ['red', 'blue', 'yellow', 'green', 'orange', 'purple'],
-        'size'  => [
-          'small'   => ['xxs', 'xs', 's'],
-          'medium'  => ['m'],
-          'large'   => ['l', 'xl', 'xxl']
-        ]
-      ];
-      $attributes = [
-        'class' => 'list-group'
-      ];
-
-      d($list);
-      d($attributes);
-      ?>
-
-      <p>video('https://www.youtube.com/watch?v=uSAkwDmJFhE'): </p>
-      <p><?= video('https://www.youtube.com/watch?v=uSAkwDmJFhE'); ?></p>
+      <p>video('videos/ULTRA DRAGON DREAM FEET.mp4', 'Your browser does not support the video tag', 'width="640" height="360" controls'): </p>
+      <p><?= video('videos/ULTRA DRAGON DREAM FEET.mp4', 'Your browser does not support the video tag', 'width="640" height="360" controls'); ?></p>
     </div>
   </div>
 
