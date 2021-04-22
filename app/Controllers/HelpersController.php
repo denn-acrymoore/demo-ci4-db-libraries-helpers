@@ -63,6 +63,16 @@ class HelpersController extends BaseController
 		return view('/helpers/v_inflectorHelper', $data);
 	}
 
+	public function number()
+	{
+		$data = [
+			'title' 		=> 'Number Helper',
+			'activeNav' => 'number-helper'
+		];
+
+		return view('/helpers/v_numberHelper', $data);
+	}
+
 	public function url()
 	{
 		$data = [
