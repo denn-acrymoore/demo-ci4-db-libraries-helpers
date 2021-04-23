@@ -27,17 +27,17 @@
       <br>
 
       <p>
-        <b>xml_convert("<?= htmlspecialchars('<books> <school-book> "Science & Philosophy (&#123;)" </school-book> </books>'); ?>"):</b>
+        <b>xml_convert("<?= htmlspecialchars('<books> <school-book> "Science & Philosophy (&#123;)( &foo; )" </school-book> </books>'); ?>"):</b>
         <br>
-        <?= xml_convert('<books> <school-book> "Science & Philosophy (&#123;)" </school-book> </books>'); ?>
+        <?= xml_convert('<books> <school-book> "Science & Philosophy (&#123;)( &foo; )" </school-book> </books>'); ?>
       </p>
 
       <br>
 
       <p>
-        <b>htmlspecialchars(xml_convert("<?= htmlspecialchars('<books> <school-book> "Science & Philosophy (&#123;)" </school-book> </books>'); ?>")):</b>
+        <b>htmlspecialchars(xml_convert("<?= htmlspecialchars('<books> <school-book> "Science & Philosophy (&#123;)( &foo; )" </school-book> </books>'); ?>")):</b>
         <br>
-        <?= htmlspecialchars(xml_convert('<books> <school-book> "Science & Philosophy (&#123;)" </school-book> </books>')); ?>
+        <?= htmlspecialchars(xml_convert('<books> <school-book> "Science & Philosophy (&#123;)( &foo; )" </school-book> </books>')); ?>
       </p>
     </div>
   </div>
@@ -49,17 +49,17 @@
     <div class="col">
       <h3>xml_convert($str, $protectAll=true)</h3>
       <p>
-        <b>xml_convert("<?= htmlspecialchars('<books> <school-book> "Science & Philosophy (&#123;)" </school-book> </books>'); ?>", true):</b>
+        <b>xml_convert("<?= htmlspecialchars('<books> <school-book> "Science & Philosophy (&#123;)( &foo; )" </school-book> </books>'); ?>", true):</b>
         <br>
-        <?= xml_convert('<books> <school-book> "Science & Philosophy (&#123;)" </school-book> </books>', true); ?>
+        <?= xml_convert('<books> <school-book> "Science & Philosophy (&#123;)( &foo; )" </school-book> </books>', true); ?>
       </p>
 
       <br>
 
       <p>
-        <b>htmlspecialchars(xml_convert("<?= htmlspecialchars('<books> <school-book> "Science & Philosophy (&#123;)" </school-book> </books>'); ?>", true)):</b>
+        <b>htmlspecialchars(xml_convert("<?= htmlspecialchars('<books> <school-book> "Science & Philosophy (&#123;)( &foo; )" </school-book> </books>'); ?>", true)):</b>
         <br>
-        <?= htmlspecialchars(xml_convert('<books> <school-book> "Science & Philosophy (&#123;)" </school-book> </books>', true)); ?>
+        <?= htmlspecialchars(xml_convert('<books> <school-book> "Science & Philosophy (&#123;)( &foo; )" </school-book> </books>', true)); ?>
       </p>
     </div>
   </div>

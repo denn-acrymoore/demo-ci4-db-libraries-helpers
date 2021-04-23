@@ -16,6 +16,26 @@ class HelpersController extends BaseController
 		return view('/helpers/v_arrayHelper', $data);
 	}
 
+	public function cookie()
+	{
+		$data = [
+			'title' 		=> 'Cookie Helper',
+			'activeNav' => 'cookie-helper'
+		];
+
+		return view('/helpers/v_cookieHelper', $data);
+	}
+
+	public function date()
+	{
+		$data = [
+			'title' 		=> 'Date Helper',
+			'activeNav' => 'date-helper'
+		];
+
+		return view('/helpers/v_dateHelper', $data);
+	}
+
 	public function filesystem()
 	{
 		$data = [
@@ -81,6 +101,16 @@ class HelpersController extends BaseController
 		];
 
 		return view('/helpers/v_securityHelper', $data);
+	}
+
+	public function text()
+	{
+		$data = [
+			'title' 		=> 'Text Helper',
+			'activeNav' => 'text-helper'
+		];
+
+		return view('/helpers/v_textHelper', $data);
 	}
 
 	public function url()

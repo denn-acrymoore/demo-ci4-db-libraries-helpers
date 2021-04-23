@@ -33,6 +33,8 @@ $routes->setAutoRoute(false);
 // route since we don't have to scan directories.
 $routes->get('/', 'HomeController::index');
 $routes->get('/helpers/array-helper', 'HelpersController::array');
+$routes->get('/helpers/cookie-helper', 'HelpersController::cookie');
+$routes->get('/helpers/date-helper', 'HelpersController::date');
 $routes->get('/helpers/filesystem-helper', 'HelpersController::filesystem');
 $routes->get('/helpers/form-helper', 'HelpersController::form');
 $routes->get('/helpers/html-helper', 'HelpersController::html');
@@ -40,6 +42,7 @@ $routes->get('/helpers/html-helper/memes', 'HelpersController::htmlMemes');
 $routes->get('/helpers/inflector-helper', 'HelpersController::inflector');
 $routes->get('/helpers/number-helper', 'HelpersController::number');
 $routes->get('/helpers/security-helper', 'HelpersController::security');
+$routes->get('/helpers/text-helper', 'HelpersController::text');
 $routes->get('/helpers/url-helper', 'HelpersController::url');
 $routes->get('/helpers/xml-helper', 'HelpersController::xml');
 
