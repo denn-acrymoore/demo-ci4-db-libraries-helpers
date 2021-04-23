@@ -34,7 +34,7 @@
       <p>$file->getBasename(): <?= $file->getBasename(); ?></p>
       <p>$file->getRandomName(): <?= $file->getRandomName(); ?></p>
       <p>$file->move(__DIR__ . '\..\..\..\public\test-files\subfolder2'):
-        <?php $file->move(__DIR__ . '\..\..\..\public\test-files\subfolder2');
+        <?php $file->move(__DIR__ . '\..\..\..\public\test-files');
         ?></p>
     </div>
   </div>
