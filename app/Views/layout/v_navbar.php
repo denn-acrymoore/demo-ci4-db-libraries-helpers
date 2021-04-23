@@ -9,6 +9,16 @@
       <li class="nav-item <?= $activeNav == 'home' ? 'active' : ''; ?>">
         <a class="nav-link" href="<?= base_url('/'); ?>">Home</a>
       </li>
+
+      <li class="nav-item dropdown <?= str_contains($activeNav, 'library') ? 'active' : ''; ?>">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Libraries
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item <?= $activeNav == 'working-with-files-library' ? 'active' : ''; ?>" href="/libraries/working-with-files-library">Working With Files Library</a>
+        </div>
+      </li>
+
       <li class="nav-item dropdown <?= str_contains($activeNav, 'helper') ? 'active' : ''; ?>">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Helpers

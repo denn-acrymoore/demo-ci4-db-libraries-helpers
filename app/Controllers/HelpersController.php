@@ -103,6 +103,16 @@ class HelpersController extends BaseController
 		return view('/helpers/v_securityHelper', $data);
 	}
 
+	public function test()
+	{
+		$data = [
+			'title' 		=> 'Test Helper',
+			'activeNav' => 'test-helper'
+		];
+
+		return view('/helpers/v_testHelper', $data);
+	}
+
 	public function text()
 	{
 		$data = [

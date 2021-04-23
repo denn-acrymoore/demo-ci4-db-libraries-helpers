@@ -32,6 +32,9 @@ $routes->setAutoRoute(false);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'HomeController::index');
+
+$routes->get('/libraries/working-with-files-library', 'LibrariesController::workingWithFiles');
+
 $routes->get('/helpers/array-helper', 'HelpersController::array');
 $routes->get('/helpers/cookie-helper', 'HelpersController::cookie');
 $routes->get('/helpers/date-helper', 'HelpersController::date');
@@ -42,6 +45,7 @@ $routes->get('/helpers/html-helper/memes', 'HelpersController::htmlMemes');
 $routes->get('/helpers/inflector-helper', 'HelpersController::inflector');
 $routes->get('/helpers/number-helper', 'HelpersController::number');
 $routes->get('/helpers/security-helper', 'HelpersController::security');
+$routes->get('/helpers/test-helper', 'HelpersController::test');
 $routes->get('/helpers/text-helper', 'HelpersController::text');
 $routes->get('/helpers/url-helper', 'HelpersController::url');
 $routes->get('/helpers/xml-helper', 'HelpersController::xml');
